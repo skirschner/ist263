@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Week 4 Forms</title>
+    </head>
+
+    <body>
+        <h1>Takeout Form</h1>
+        <form action="" method="post">
+            <label for="fname"> First Name: </label>
+            <input type="text" name="fullname" id="fname"><br>
+
+                        <!--input elements are inline elements, most form elements are inline-->
+
+            <label for="orderitem"> Order Item: </label>
+            <input type="text" name="orderitem" id="orderitem"><br><br>
+
+            <label for="specialrequests">Special Requests</label><br>
+            <textarea type="text" name="specialrequests" id="specialrequests"></textarea><br>
+
+            <p>How do you want to pay?</p>
+            
+            <label for="instore">Pay in Store</label>
+            <input type="radio" id="instore" name="howpay">
+
+            <label for="online">Pay Online</label>
+            <input type="radio" id="online" name="howpay"><br><br>
+
+            <p>Add Condiments???</p>
+
+            <label for="bbq">BBQ Sause</label>
+            <input type="checkbox" id="bbq" name="bbq">
+
+            <label for="ketchup">Ketchup</label>
+            <input type="checkbox" id="ketchup" name="ketchup"><br><br>
+
+                        <!-- id is what hooks to label, name is what appears on screen-->
+
+            <label for="pickuptime">Pick-up Time</label>
+            <select name="pickuptime" id="pickuptime">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option va;ue="evening">Evening</option>
+            </select><br><br>
+                        
+                        <!-- value is what displays within the submission button, input is a void tag with no close-->
+
+            <input type="submit" value="send order">
+        </form>
+    </body>
+</html>
