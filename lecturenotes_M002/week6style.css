@@ -3,3 +3,15 @@ p {color:green;}
 .bluenav {background-color: lightblue;}
 
 /*no html allowed here!!!*/
+
+/* 
+
+participation activity 
+
+<style>
+    p a {color:green;} (descendant)
+    h1 {color:red;} (element)
+    .myclass {color:blue;} (class)
+</style>
+
+*/
