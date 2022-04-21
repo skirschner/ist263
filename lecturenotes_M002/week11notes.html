@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        1. HTML link to anchor to our content area
+        2. Put an id attribute into the place you want the anchor to go
+        3. Hide and show skip to content
+        4. Style the skip to content link
+        */
+
+        #skip {
+            position: absolute; /* absolute means take it out of the page flow, use left to set position */
+            left: -999px;
+            background-color: orange;
+            padding: 5px; /* margin gives soace outside the box, padding gives space inside the box */
+        }
+
+        #skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#content" id="skip">Skip to Content</a>
+        <a href="https://twitter.com">Twitter</a>
+        <a href="index.html" tabindex="1">Home</a>
+        <a href="skills.html" tabindex="2">Skills</a>
+        <a href="contact.html" tabindex="3">Contact</a>
+    </nav>
+    <main>
+        <img src="image.jpg" alt="description of image">
+        <h1>Accesibility</h1>
+            <h2>Semantic Tags</h2>
+                <h3>Aside</h3>
+                <h3>Nav</h3>
+                <h3>Footer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolore blanditiis id beatae vel accusantium molestiae nemo aliquam libero eum tempora, labore adipisci nostrum voluptas earum totam eveniet ipsum dicta.</p>
+            <h2>Heading tags in Hierachy</h2>
+    </main>
+    <footer id="content">
+        <p>Quote</p>
+    </footer>
+</body>
+</html>
