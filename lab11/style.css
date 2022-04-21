@@ -1,14 +1,14 @@
 body {background-color: #EDC951;
-        color: #902D99;}
+        color: #000000;}
 
 h1, h2, h3 {background-color:#3494EA;}
 
-a {color: #902D99;}
+a {color: #000000;}
 
 nav {background-color:#C5D8A4;
-        color:#DAA2A4;}
+        color:#000000;}
 
-nav a {color:#DAA2A4;}
+nav a {color:#000000;}
 
 nav a:hover {background-color:#F4FCD9;}
 
