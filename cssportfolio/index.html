@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sara Kirschner</title>
+    <style>
+        nav a:link {
+            text-decoration: none;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav {
+            float: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        .homelogo {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 30em;
+            max-height: 30em;
+            display: flex;
+        }
+
+        @media screen and (max-width: 480px) {
+            nav a {
+                position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    float: none;
+    display: block;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <main>
+        <img src="../portfolio/images/logo.png" alt="Personal Logo of Initials" class="homelogo">
+        <nav>
+            <a href="index">Home</a> <span>|</span>
+            <a href="bio">Bio</a> <span>|</span>
+            <a href="mixtape">Mixtape</a> <span>|</span>
+            <a href="zipped">Zipped</a> <span>|</span>
+            <a href="moody">Moody</a> <span>|</span>
+            <a href="fads">FADS</a> <span>|</span>
+            <a href="cuseathletics">SU Athletics</a> <span>|</span>
+            <a href="freelance">Freelance</a> <span>|</span>
+            <a href="contact">Contact</a>
+        </nav>
+
+    </main>
+    
+</body>
+</html>
