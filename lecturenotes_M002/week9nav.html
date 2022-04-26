@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,68 +8,62 @@
     <title>Document</title>
     <style>
         .row1 {
-            background-color: black; 
-            color: white; 
+            background-color: #000000;
+            color: white;
             display: flex;
             justify-content: flex-end;
         }
-
         .row2 {
-            background-color: black; 
-            color: white; 
-            display: flex; 
+            background-color: #000000;
+            color: white;
+            display: flex;
             justify-content: space-between;
             margin-top: 10px;
         }
-
-        .row1 div, .row2 div {
+        .row1 div, .row2 div, .row3 div {
             margin: 10px;
         }
-
-        .row3{
+        .row3 {
             display: flex;
             background-color: black;
             color: white;
             margin-top: 10px;
+            justify-content: space-between; /* justify content is always on the flex row */
         }
+        .firstinnerflex, .secondinnerflex {display: flex;}
     </style>
 </head>
 <body>
     
-<div class="row1">
-    <div>Home</div>
-    <div>About Us</div>
-    <div>Products</div>
-    <div>Contact</div>
-</div>
-
-<div class="row2">
-    <div>Home</div>
-    <div>About Us</div>
-    <div>Products</div>
-    <div>Contact</div>
-</div>
-
-<div class="row3">
-    <div>col 1</div>
-    <div>col 2</div>
-</div>
-
-<div class="row3">
-    <div>
-        <div class="firstinnerflex">
-            <div>Home</div>
-            <div>About Us</div>
-            <div>Products</div>
-            <div>Contact</div>
-        </div>
+    <div class="row1">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div> 
     </div>
-    <div>
+    <div class="row2">
+        <div>Home</div>
+        <div>About Us</div>
+        <div>Products</div>
+        <div>Contact</div> 
+    </div>
+
+    <div class="row3">
         <div>
-            <div></div>
+            <div class="firstinnerflex">
+                <div>Home</div>
+                <div>About Us</div>
+                <div>Products</div>
+                <div>Contact</div> 
+            </div>
+        </div>
+        <div>
+            <div class="secondinnerflex">
+                <div>Twitter</div>
+                <div>Facebook</div>
+            </div>
         </div>
     </div>
-</div>
 
 </body>
 </html>
