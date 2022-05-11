@@ -17,17 +17,24 @@ nav a:visited {color:black;}
 
 nav {
     display: flex;
-    justify-content: space-between;
-    margin: 40px;
+    justify-content: flex-end;
+    margin: 25px;
     margin-right: 50px;
     flex-wrap: wrap;
+}
+
+nav a {
+    margin: 10px;
 }
 
 /* body */
 
 p {font-family: Arial, Helvetica, sans-serif;}
 
-h1 {font-family: 'Oswald', sans-serif;}
+h1 {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 20px;
+}
 
 body {
     background: yellow;
@@ -43,10 +50,14 @@ body {
     display: flex;
 }
 
-.hyperlink {
+.hyperlink, .linkedin {
     text-decoration: none;
     color: black;
 }
+
+.hyperlink a:hover {color: green;}
+
+.hyperlink a:visited {color:black;}
 
 p a:hover {color: green;}
 
