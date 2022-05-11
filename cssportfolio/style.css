@@ -7,6 +7,8 @@ nav a:link {
 
 nav a:hover {color: green;}
 
+nav a:visited {color:black;}
+
 .homelogo {
     max-width: 15em;
     max-height: 15em;
@@ -18,6 +20,7 @@ nav {
     justify-content: space-between;
     margin: 40px;
     margin-right: 50px;
+    flex-wrap: wrap;
 }
 
 /* body */
@@ -31,13 +34,35 @@ body {
     background: repeating-radial-gradient(white, yellow, white);
 }
 
+.photogrid img {
+    width: 100%;
+    height: auto;
+}
+
+.photogrid {
+    display: flex;
+}
+
+.hyperlink {
+    text-decoration: none;
+    color: black;
+}
+
+p a:hover {color: green;}
+
+p a:visited {color:black;}
+
 /* footer */
 .instatag{
     float: right;
     text-decoration: none;
     color: black;
+    margin-right: 15px;
 }
 
 footer a:hover {color: green;}
 
-footer {font-family: 'Oswald', sans-serif;}
+footer {
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10px;
+}

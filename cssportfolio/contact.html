@@ -5,23 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Sara Kirschner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <title>Kirschner - Contact</title>
+    <style>
+        .main {
+            margin: auto;
+            max-width: 960px;
+        }
+    </style>
+    <script>
+        function contactResponse (){
+            alert ('Thank you for your response, I will get back to you as soon as I can!');
+        }
+    </script>
 </head>
 <body>
 
-    <span><img src="../portfolio/images/logo.png" alt="Personal Logo of Initials"></span><nav>
-        <a href="index">Home</a> <span>|</span>
-        <a href="bio">Bio</a> <span>|</span>
-        <a href="mixtape">Mixtape</a> <span>|</span>
-        <a href="zipped">Zipped</a> <span>|</span>
-        <a href="moody">Moody</a> <span>|</span>
-        <a href="fads">FADS</a> <span>|</span>
-        <a href="cuseathletics">SU Athletics</a> <span>|</span>
-        <a href="freelance">Freelance</a> <span>|</span>
-        <a href="contact">Contact</a> <span>|</span>
+    <nav>
+        <a href="index">Home</a>
+        <a href="bio">Bio</a>
+        <a href="mixtape">Mixtape</a>
+        <a href="zipped">Zipped</a>
+        <a href="moody">Moody</a>
+        <a href="fads">FADS</a>
+        <a href="cuseathletics">SU Athletics</a>
+        <a href="freelance">Freelance</a>
+        <a href="contact">Contact</a>
     </nav>
     
-    <main>    
+    <main class="content">    
         <form action="https://formspree.io/f/mrgjqlzq" method="post" class="form">
             <label for="fname"> Name: </label>
             <input type="text" name="fullname" id="fname"><br>
@@ -35,14 +49,13 @@
             <label for="message">Message</label><br>
             <textarea name="message" id="message"></textarea><br>
                         
-            <input type="submit" value="Send">
+            <input type="submit" value="Send" onclick="contactResponse ();">
         </form>    
     </main>
 
     <footer>
-        <hr>
         &copy; 2022
-        <span><a href="https://www.instagram.com/sara.kirschner/" target="_blank">@sara.kirschner</a></span>
+        <span><a class="instatag" href="https://www.instagram.com/sara.kirschner/" target="_blank">@sara.kirschner</a></span>
     </footer>
 </body>
 </html>
