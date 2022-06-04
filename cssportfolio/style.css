@@ -9,12 +9,6 @@ nav a:hover {color: green;}
 
 nav a:visited {color:black;}
 
-.homelogo {
-    max-width: 15em;
-    max-height: 15em;
-    float: left;
-}
-
 nav {
     display: flex;
     justify-content: flex-end;
